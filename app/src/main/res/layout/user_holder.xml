@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="80dp"
+              android:layout_margin="10dp"
+                android:padding="5dp"
+    android:background="#000">
+<RelativeLayout
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/user_name_relativeLayout">
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="User Name : "
+    android:textColor="#fff"
+    android:paddingRight="5dp"
+    android:id="@+id/manage_user_username_textview"
+        android:textSize="15sp"/>
+    <TextView
+        android:textColor="#fff"
+        android:layout_toRightOf="@id/manage_user_username_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manage_user_username"
+        android:textSize="15sp"
+        android:text="null"/>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/user_name_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userEmail_relative_layout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : "
+            android:paddingRight="5dp"
+            android:id="@+id/user_email_text_view"
+            android:textSize="15sp"/>
+        <TextView
+            android:layout_toRightOf="@+id/user_email_text_view"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/manage_user_email"
+            android:textSize="12sp"
+            android:text="null"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userEmail_relative_layout"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/user_password_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password : "
+            android:paddingRight="5dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:textColor="#fff"
+            android:layout_toRightOf="@+id/user_password_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/manage_user_password"
+            android:textSize="15sp"
+            android:text="null"/>
+    </RelativeLayout>
+
+<Button
+    android:id="@+id/manage_user_edit_btn"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="7dp"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:background="@drawable/btn_bg"
+    android:textSize="18sp"
+    android:text="Edit"
+    android:textColor="#fff"
+    android:layout_alignParentRight="true"/>
+    <Button
+        android:id="@+id/manage_user_delete_btn"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_bg"
+        android:textSize="18sp"
+        android:text="Delete"
+        android:textColor="#fff"
+        android:layout_below="@+id/manage_user_edit_btn"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

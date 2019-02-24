@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+    <item
+        android:id="@+id/addComponent"
+        android:icon="@drawable/add_item"
+        android:title="Add Component"/>
+    <item
+        android:id="@+id/addCategory"
+        android:icon="@drawable/add_category"
+        android:title="Add Category"/>
+
+    <item
+        android:id="@+id/search_component_by_category"
+        android:icon="@drawable/search"
+        android:title="Search Component"/>
+
+</group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/User_Setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Account Settings"/>
+        <item
+            android:id="@+id/Review"
+            android:icon="@drawable/review"
+            android:title="Review"/>
+
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/exit"
+            android:title="Exit"/>
+
+    </group>
+
+</menu>
